@@ -21,7 +21,7 @@ def create_room(url):
     chrome_options.add_argument('--no-sandbox')
     chrome_options.binary_location = GOOGLE_CHROME_PATH
 
-    driver = webdriver.Chrome(execution_path=CHROMEDRIVER_PATH, options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
 
     driver.get("https://w2g.tv/")
 
